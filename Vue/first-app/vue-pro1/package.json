@@ -1,5 +1,5 @@
 {
-  "name": "first-vue",
+  "name": "vue-pro1",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -11,6 +11,9 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.3",
+    "unplugin-auto-import": "^0.11.2",
+    "unplugin-element-plus": "^0.4.1",
+    "unplugin-vue-components": "^0.22.7",
     "vite": "^3.0.9"
   }
 }

@@ -2,13 +2,13 @@
   <div class="common-layout">
     <el-container>
       <el-header>
-        <el-row :gutter="20">
-          <el-col :span="6">
-            <div class="grid-content ep-bg-purple" style="height: 50px">这是Logo</div>
+        <el-row :gutter="20" style='height: 100%' class="header-nav-row">
+          <el-col :span="6" class="need-border header-nav-col-field">
+            <div class="grid-content ep-bg-purple">这是Logo</div>
           </el-col>
-          <el-col :span="6" :offset="12">
-            <div class="grid-content ep-bg-purple-light">
-              <span>这是头部导航选项等</span>
+          <el-col :span="6" :offset="12" class="need-border header-nav-col-field">
+            <div class="grid-content ep-bg-purple-light need-border">
+              这是头部导航选项等
             </div>
           </el-col>
         </el-row>
@@ -32,25 +32,24 @@
 import SidebarMenu from '@/components/SidebarMenu.vue'
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style scoped>
+
+
+.header-nav-row {
+  align-content: center;
 }
 
-nav {
-  padding: 30px;
+
+.need-border {
+  border: 2px solid coral;
 }
 
-nav a {
+a {
   font-weight: bold;
   color: #2c3e50;
 }
 
-nav a.router-link-exact-active {
+a.router-link-exact-active {
   color: #42b983;
 }
 </style>

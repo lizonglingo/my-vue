@@ -1,5 +1,7 @@
 <template>
-  <h5 class="mb-2">这是侧边导航栏</h5>
+  <h5 class="mb-2" >
+    <div class='sidebar-title'>这是侧边导航栏</div>
+  </h5>
   <el-menu
     default-active="2"
     class="el-menu-vertical-demo"
@@ -73,6 +75,11 @@ const handleClose = (key: string, keyPath: string[]) => {
 </script>
 
 <style scoped>
+
+.sidebar-title {
+  text-align: center;
+}
+
 a:link {
   color: black;
   text-decoration: none;
